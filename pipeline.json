@@ -1,0 +1,20 @@
+{
+  "pipeline": {
+    "name": "test"
+  },
+  "transform": {
+    "cmd": [ 
+        "ls", 
+        "/pfs/in"
+    ]
+  },
+  "parallelism_spec": {
+    "constant": "2"
+  },
+  "input": {
+    "atom": {
+      "repo": "in",
+      "glob": "/*"
+    }
+  }
+}
